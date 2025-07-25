@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f700f888be9b29432fa10b5b62b1b064 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f700f888be9b29432fa10b5b62b1b064" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f700f888be9b29432fa10b5b62b1b064 = L.map(
+                "map_f700f888be9b29432fa10b5b62b1b064",
+                {
+                    center: [-22.0125, -47.8927],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb21ca34e5c6d152f4cc26bfc95c7c97 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cb21ca34e5c6d152f4cc26bfc95c7c97.addTo(map_f700f888be9b29432fa10b5b62b1b064);
+        
+    
+            var marker_fb7e5fe312ca87fcdb11af9d558190f4 = L.marker(
+                [-22.0125, -47.8927],
+                {
+}
+            ).addTo(map_f700f888be9b29432fa10b5b62b1b064);
+        
+    
+        var popup_b6b6a3060ee294b7e68dda8775353bd9 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var i_frame_17baa4f6059da7cf84a270c32d181c51 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKPGRpdiBzdHlsZT0id2lkdGg6MzAwcHg7IGhlaWdodDoyMDBweDsiPgogIDxpbWcgc3JjPSJodHRwczovL3BpY3N1bS5waG90b3MvMzAwLzIwMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIHN0eWxlPSJvYmplY3QtZml0OmNvdmVyOyBib3JkZXItcmFkaXVzOjEycHg7IiAvPgo8L2Rpdj4=" width="320" style="border:none !important;" height="220"></iframe>`)[0];
+                popup_b6b6a3060ee294b7e68dda8775353bd9.setContent(i_frame_17baa4f6059da7cf84a270c32d181c51);
+            
+        
+
+        marker_fb7e5fe312ca87fcdb11af9d558190f4.bindPopup(popup_b6b6a3060ee294b7e68dda8775353bd9)
+        ;
+
+        
+    
+    
+            marker_fb7e5fe312ca87fcdb11af9d558190f4.bindTooltip(
+                `<div>
+                     Arena TUSCA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
